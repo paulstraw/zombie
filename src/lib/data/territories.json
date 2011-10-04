@@ -1,0 +1,10 @@
+{
+	"factory": {
+		"size": {
+			"x": 800,
+			"y": 800
+		},
+		"players": [],
+		"zombies": {}
+	}
+}

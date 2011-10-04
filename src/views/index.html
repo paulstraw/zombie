@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Zombie Game, or Whatever">
+		<meta name="designer" content="Paul Straw">
+		<meta name="developer" content="Paul Straw">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+
+		<title>Zombie Game, or Whatever</title>
+
+		<link rel="shortcut icon" href="img/favicon.png">
+		<!-- <link rel="stylesheet" media="screen, projection" href="css/screen.css"> -->
+	</head>
+
+	<body>
+		<h1>Zombie Game, or Whatever</h1>
+
+		<% if (typeof flash != 'undefined') { %>
+			<h3><%= flash %></h3>
+		<% } %>
+
+		<a href="/game">game</a>
+
+		<form id="login" action="/login" method="post">
+			<h2>Log In:</h2>
+
+			<%- loginForm %>
+
+			<input type="submit" value="Log In">
+		</form>
+
+		<form id="signup" action="/signup" method="post">
+			<h2>Sign Up:</h2>
+
+			<%- signupForm %>
+			<input type="submit" value="Sign Up">
+		</form>
+	</body>
+</html>
